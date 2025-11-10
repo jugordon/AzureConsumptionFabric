@@ -63,13 +63,14 @@ In a workspace in Fabric, create the following resources
 ## Warehouse objects
 Inside the Warehouse folder you will find the following files :
 1. consumption_tables.sql -> Tables required
-2. cost_processing.sql -> Stored procedure 
+2. delete_current_period.sql -> Stored procedure that delete data from the current processed period
+3. cost_processing.sql -> Stored procedure that process aggregated tables used by the report
 
 Go to your warehouse item , add a new query and execute the content of both files.
 
 
 ## Pipeline configuration
-![ADF Pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/importPipelineTemplate.png)
+![ADF Pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/pipeline.png)
 
 Now we are going to import the pipeline will orchestrate the complete data flow between the Azure Consumption API and the Fabric items
 
