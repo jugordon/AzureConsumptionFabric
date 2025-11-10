@@ -5,7 +5,7 @@ This project provides an end-to-end solution to monitor Azure consumption for a 
 
 ![diagramaSolucion](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/diagramaSolucionFabric.png) 
 
-Architecture
+### Architecture details :
 
 Data Source:
 
@@ -57,6 +57,9 @@ In a workspace in Fabric, create the following resources
 
 ## Import ingestion notebook
 
+1. Inside the ingestionNotebook folder you will find the ingestionNotebook.ipynb, please download to your computer.
+2. Go to your Fabric Workspace and click on import -> notebook -> from your computer  ![Import notebook](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/importNotebook.png)
+
 ## Warehouse objects
 Inside the Warehouse folder you will find the following files :
 1. consumption_tables.sql -> Tables required
@@ -78,11 +81,12 @@ Now we are going to import the pipeline will orchestrate the complete data flow 
 ### Pipeline parameters
 
 Configure the following parameters  : 
-1. BillID -> BillID or enrollment number
-2. TenantID -> Tenant ID ( obtained from service principal creation )
-3. ClientID -> Application ID of the service principal ( obtained from service principal creation )
-4. Secret -> Secret of the service principal
+1. billing_account_id -> BillID or enrollment number
+2. tenant_id -> Tenant ID ( obtained from service principal creation )
+3. client_id -> Application ID of the service principal ( obtained from service principal creation )
+4. client_secret -> Secret of the service principal
 5. Period -> Period of time that will be processed by the pipeline, 0 : means current month, -1 : past month, -2 : 2 months ago, and so on..
-6. Customer -> Name of your company (it will be used in file names)
+6. customer_name -> Name of your company (it will be used in file names)
+7. notification_email -> Email that will receive notifications in case of failure
 
-   ![ADF Pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/adfParameters.png)
+   ![ADF Pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/parametersPipeline.png)
