@@ -7,23 +7,20 @@ This project provides an end-to-end solution to monitor Azure consumption for a 
 
 ### Architecture details :
 
-Data Source:
+#### Data Source:
 
 Azure Cost Management API as the primary source of consumption data.
 
-
-Data Ingestion:
+#### Data Ingestion:
 
 A Fabric notebook extracts data from the API and loads it into a Lakehouse.
 
-
-Data Transformation:
+#### Data Transformation:
 
 Data is copied from the Lakehouse to a Warehouse table.
 Stored procedures populate aggregated tables for reporting.
 
-
-Visualization:
+#### Visualization:
 
 A Power BI dashboard connects to aggregated tables to display consumption metrics, trends, and anomalies.
 
