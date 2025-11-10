@@ -59,7 +59,7 @@ Create a new [workspace](https://learn.microsoft.com/en-us/fabric/fundamentals/c
 
 1. Inside the ingestionNotebook folder you will find the ingestionNotebook.ipynb, please download to your computer.
 2. Go to your Fabric Workspace and click on import -> notebook -> from your computer  ![Import notebook](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/importNotebook.png)
-3. Once the notebook is imported, go to data sources and add new data item, make sure to select the lakehouse previously created. ![Add data source](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/newdatasource.png)
+3. Once the notebook is imported, go to data sources and add new data item, make sure to select the lakehouse previously created. ![Add data source](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/addnewdatasource.png)
 
 ## Warehouse objects
 Inside the Warehouse folder you will find the following files :
