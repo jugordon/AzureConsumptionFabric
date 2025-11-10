@@ -34,7 +34,10 @@ Permissions
 Software required for the deployment : 
 1. [PowerBI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
 
-Create a new [workspace](https://learn.microsoft.com/en-us/fabric/fundamentals/create-workspaces) in Fabric and create the following Fabric items:
+Create a new Fabric Capacity (ignore this step if you already have one)
+1. Go to the Azure Portal and create a new [Fabric capacity](https://learn.microsoft.com/en-us/fabric/enterprise/buy-subscription#buy-an-azure-sku) in your previously defined resource group.
+
+Create a new [workspace](https://learn.microsoft.com/en-us/fabric/fundamentals/create-workspaces) in Fabric, make sure to use your previoly created capacity and create the following Fabric items:
 1. [Lakehouse](https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-build-lakehouse). Don't enable lakehouse schemas
 2. [Warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/create-warehouse).
 3. [Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-pipeline). Empty pipeline
