@@ -96,18 +96,18 @@ Configure the following parameters  :
 
 ## Schedule the daily execution of the pipeline using triggers
 
-1. Select new triger
-   ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
-2. Configure the daily trigger :
-   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.png)
+1. Select schedule
+   ![New trigger](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/newschedule.png)
+2. Configure the daily schedule execution :
+   ![Trigger wizard](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/dailytrigger.png)
 
 ## Schedule a monthly execution of the pipeline using triggers
 We recommend to configure a monthly execution that will process previous months, this is because it could be ajustments at the begining of each month. A recommended day would be to execute it each day 5 of month.
 
-1. Select new triger
-   ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
-2. Configure the monthly trigger :
-   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/monthlyExecution.png)
+1. Select schedule
+   ![New trigger](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/newschedule.png)
+2. Configure the schedule execution :
+   ![Trigger wizard](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/dailytrigger.png)
 
    
 ## Connect and publish PowerBI report
@@ -117,6 +117,6 @@ We recommend to configure a monthly execution that will process previous months,
    ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/powerbitransform.png)
 4. Configure the source for each of the tables
    ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/powerbiconfiguresource.png)
-5. Change the server endpoint, login with your SQL user and select the tables
+5. Change the server endpoint, use the SQL endpoint of your warehouse
    ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/powerbiconfigureServer.png)
 6. After you see that your PowerBI data shows your data, click on Publish and select the workspace.
