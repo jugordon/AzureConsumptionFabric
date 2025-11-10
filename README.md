@@ -76,8 +76,9 @@ Now we are going to import the pipeline will orchestrate the complete data flow 
 
 1. Download the pipeline template to your computer from pipelineTemplate/costMasterPipeline.zip.
 2. Go to your pipeline item 
-3. Import the template into ADF Piplines ![Import pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/importPipelineTemplate.png)
-4. Configure the linked services for the warehouse element
+3. Import the template into ADF Piplines
+4. ![Import pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/importPipelineTemplate.png)
+5. Configure the linked services for the warehouse element
 
 ### Pipeline parameters
 
