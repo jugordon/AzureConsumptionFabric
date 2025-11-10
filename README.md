@@ -37,11 +37,11 @@ Permissions
 Software required for the deployment : 
 1. [PowerBI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
 
-In a workspace in Fabric, create the following resources
-1. [Lakehouse](https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-build-lakehouse).
+Create a new [workspace](https://learn.microsoft.com/en-us/fabric/fundamentals/create-workspaces) in Fabric and create the following Fabric items:
+1. [Lakehouse](https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-build-lakehouse). Don't enable lakehouse schemas
 2. [Warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/create-warehouse).
 3. [Pipeline](https://learn.microsoft.com/en-us/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-pipeline). Empty pipeline
-4. [Environment](https://learn.microsoft.com/en-us/fabric/data-engineering/create-and-use-environment).Runtime 1.3 with spark 3.5
+4. [Environment](https://learn.microsoft.com/en-us/fabric/data-engineering/create-and-use-environment). Runtime 1.3 with spark 3.5
 
 
 ## Setup Guide
