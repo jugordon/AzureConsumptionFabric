@@ -30,6 +30,7 @@ A Power BI dashboard connects to aggregated tables to display consumption metric
 Permissions 
 1. User with Global Administrator Role in Azure ( It will be required for configure the EnrollmentReader role in the service principal)
 2. Azure subscription and a resource group with permission to create resources
+3. Fabric workspace with contributor role
 
 Software required for the deployment : 
 1. [PowerBI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
