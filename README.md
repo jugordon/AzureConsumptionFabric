@@ -114,10 +114,12 @@ Configure the following parameters  :
 ## Schedule a monthly execution of the pipeline using triggers
 We recommend to configure a monthly execution that will process previous months, this is because it could be ajustments at the begining of each month. A recommended day would be to execute it each day 5 of month.
 
-1. Select schedule
+1.Duplicate your pipeline object 
+2. Change the period parameter to -1
+3. Select schedule
    ![New trigger](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/newschedule.png)
-2. Configure the schedule execution :
-   ![Trigger wizard](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/dailytrigger.png)
+4. Configure the  monthly schedule execution :
+   ![Trigger wizard](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/pipelineMonthlyExecution.png)
 
    
 ## Connect and publish PowerBI report
