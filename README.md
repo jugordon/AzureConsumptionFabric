@@ -76,7 +76,7 @@ Go to your warehouse item , add a new query and execute the content of both file
 
 
 ## Pipeline configuration
-![ADF Pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/pipeline.png)
+![ADF Pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/newpipeline.png)
 
 Now we are going to import the pipeline will orchestrate the complete data flow between the Azure Consumption API and the Fabric items
 
