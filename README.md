@@ -3,13 +3,13 @@ This project provides an end-to-end solution to monitor Azure consumption for a 
 
 ## High level architecture 
 
-![diagramaSolucion](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/diagramaSolucionFabric.png) 
+![diagramaSolucion](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/newArchitecture.png) 
 
 ### Architecture details :
 
 #### Data Source:
 
-Azure Cost Management API as the primary source of consumption data.
+Azure Cost Management API as the primary source of consumption data. Azure Advisor recommendation data as complementary data source to get cost optimization recommendations.
 
 #### Data Ingestion:
 
