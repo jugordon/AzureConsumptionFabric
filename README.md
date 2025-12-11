@@ -103,7 +103,7 @@ Configure the following parameters  :
 10. warehouse_schema -> Schema of the warehouse used, by default is 'cost'
 11. warehouse_cost_table -> Main table of the warehouse, by default is 'consumoAzure'
 
-   ![ADF Pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/parametersPipeline.png)
+   ![ADF Pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/pipelineParameters2.png)
 
 ## Schedule the daily execution of the pipeline using triggers
 
