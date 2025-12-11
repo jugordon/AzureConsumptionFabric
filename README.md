@@ -61,9 +61,10 @@ Create a new [workspace](https://learn.microsoft.com/en-us/fabric/fundamentals/c
 1. Inside the ingestionNotebook folder you will find the following files: ingestionNotebook.ipynb and get_advisor_data.ipynb, please download both files to your computer.
 2. Go to your Fabric Workspace and click on import -> notebook -> from your computer  ![Import notebook](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/importNotebook.png)
 3. Once the notebook is imported, go to data sources and add new data item, make sure to select the lakehouse previously created. ![Add data source](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/addnewdatasource.png)
-4. Delete any data source not used.
-5. Select the environment previously created.
-6. Repeat the process for both notebooks.
+4. Make this lakehouse the default data source.
+5. Delete any data source not used.
+6. Select the environment previously created.
+7. Repeat the process for both notebooks.
 
 ## Warehouse objects
 Inside the Warehouse folder you will find the following files :
