@@ -115,7 +115,7 @@ Configure the following parameters  :
 ## Schedule a monthly execution of the pipeline using triggers
 We recommend to configure a monthly execution that will process previous months, this is because it could be ajustments at the begining of each month. A recommended day would be to execute it each day 5 of month.
 
-1.Duplicate your pipeline object 
+1. Duplicate your pipeline object with a new name ( example procesaConsumoMensual) 
 2. Change the period parameter to -1
 3. Select schedule
    ![New trigger](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/newschedule.png)
