@@ -13,7 +13,7 @@ Azure Cost Management API as the primary source of consumption data. Azure Advis
 
 #### Data Ingestion:
 
-A Fabric notebook extracts data from the API and loads it into a Lakehouse.
+A Fabric notebook extracts data from the APIs and loads it into a Lakehouse.
 
 #### Data Transformation:
 
