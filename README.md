@@ -56,11 +56,14 @@ Create a new [workspace](https://learn.microsoft.com/en-us/fabric/fundamentals/c
    - For customers with Microsoft Agreements please follow this guide : https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles#manage-billing-roles-in-the-azure-portal
   
 
-## Import ingestion notebook
+## Import ingestion notebook and get advisor notebook
 
-1. Inside the ingestionNotebook folder you will find the ingestionNotebook.ipynb, please download to your computer.
+1. Inside the ingestionNotebook folder you will find the following files: ingestionNotebook.ipynb and get_advisor_data.ipynb, please download both files to your computer.
 2. Go to your Fabric Workspace and click on import -> notebook -> from your computer  ![Import notebook](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/importNotebook.png)
 3. Once the notebook is imported, go to data sources and add new data item, make sure to select the lakehouse previously created. ![Add data source](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/addnewdatasource.png)
+4. Delete any data source not used.
+5. Select the environment previously created.
+6. Repeat the process for both notebooks.
 
 ## Warehouse objects
 Inside the Warehouse folder you will find the following files :
@@ -81,6 +84,8 @@ Now we are going to import the pipeline will orchestrate the complete data flow 
 3. Import the template into ADF Piplines
 4. ![Import pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/importPipelineTemplate.png)
 5. Configure the linked services for the warehouse element
+6. Change the settings of both notebooks with your workspace and select the appropiate notebook
+7. ![Notebook settings](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/notebookSettings.png)
 
 ### Pipeline parameters
 
@@ -91,7 +96,11 @@ Configure the following parameters  :
 4. client_secret -> Secret of the service principal
 5. Period -> Period of time that will be processed by the pipeline, 0 : means current month, -1 : past month, -2 : 2 months ago, and so on..
 6. customer_name -> Name of your company (it will be used in file names)
-7. notification_email -> Email that will receive notifications in case of failure
+7. lakehouse_cost_table -> Name of the staging cost table
+8. lakehouse_log_table -> Name of the log table
+9. warehouse_name -> Name of your warehouse object
+10. warehouse_schema -> Schema of the warehouse used, by default is 'cost'
+11. warehouse_cost_table -> Main table of the warehouse, by default is 'consumoAzure'
 
    ![ADF Pipeline](https://github.com/jugordon/AzureConsumptionFabric/blob/main/resources/parametersPipeline.png)
 
@@ -114,13 +123,14 @@ We recommend to configure a monthly execution that will process previous months,
 ## Connect and publish PowerBI report
 1. Download the PowerBI template in PowerBITemplate/Azure_Consumption.pbix
 2. Open the file in PowerBI Desktop
-3. Go to transform data
+3. Cancel any attempt of authentication to the data source
+4. Go to transform data
    ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/powerbitransform.png)
-4. Configure the source for each of the tables
+5. Configure the source for each of the tables
    ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/powerbiconfiguresource.png)
-5. Change the server endpoint, use the SQL endpoint of your warehouse
+6. Change the server endpoint, use the SQL endpoint of your warehouse
    ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/powerbiconfigureServer.png)
-6. After you see that your PowerBI data shows your data, click on Publish and select the workspace.
-7. 
+7. After you see that your PowerBI data shows your data, click on Publish and select the workspace.
+8. 
 
 ## Data Agent -- pending
